@@ -1,4 +1,4 @@
-<html>
+﻿<html>
     <head>
         <meta charset="UTF-8">
         <title>Nome do site</title>
@@ -142,11 +142,11 @@
         </header>
         <section id="exm">
             <?php
-            include './sobre.php';
-            include './carrossel.php';
-            include './local.php';
-            include './contato.php';
-            include './rodape.php';
+            include './sobre.html';
+            include './carrossel.html';
+            include './local.html';
+            include './contato.html';
+            include './rodape.html';
             ?>
         </section>
         
