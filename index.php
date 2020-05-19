@@ -143,7 +143,7 @@
         <section id="exm">
             <?php
             include './sobre.html';
-            include './carrossel.html';
+            include './galeria.html';
             include './local.html';
             include './contato.html';
             include './rodape.html';
