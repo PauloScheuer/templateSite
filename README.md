@@ -4,5 +4,3 @@ Template para landing page contendo as seguintes seções: header, sobre, galeri
 *Para o carrossel da galeria, utilizando o gerador encontrado em: https://github.com/PauloScheuer/carouselGenerator
 
 *Novas seções em criação
-
-*Responsividade sendo ajustada
