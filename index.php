@@ -64,6 +64,21 @@
                 background: #f4f4f4;
                 text-align: center;
             }
+            .hiddenMenu{
+                display:none;
+                position: fixed;
+                z-index: 3;
+                padding: 50px;
+                top:75px;
+                right: 75px;
+                border:2px solid #373737;
+                border-radius: 8px;
+                background-color: #f4f4f4;
+                cursor: pointer;
+            }
+            .hiddenMenu img{
+                transform: scale(2);
+            }
             .links{
                 font-size: 22px;
                 position: fixed;
@@ -78,7 +93,6 @@
                 border-radius: 0 0 4px 4px;
             }
             .links a{
-                border-bottom: 0px solid #373737;
                 padding: 10px;
                 cursor: pointer;
                 margin-right: 30px;
@@ -115,11 +129,56 @@
                 margin-bottom: 4px;
                 transform: scale(2);
             }
+            .otherLinks{
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 3;
+                background-color: #f4f4f4;
+                color: #373737;
+                width:0;
+                height: 100vh;
+                opacity: 0;
+                overflow:hidden;
+                transition: 0.6s;
+                font-size: 50;
+                display: flex;
+                justify-content: center;
+                flex-direction:column;
+                justify-content: initial;
+                border-right: 1px solid #373737;
+                box-shadow: 0 0 100px 0 black;
+            }
+            .otherLinks a{
+                font-weight: 300;
+                text-align: center;
+                padding-top: 100px;
+                padding-bottom: 100px;
+                width: 100%;
+                height: 100px;
+            }
 
             @media only screen and (max-device-width: 900px) {
+                header h1{
+                    font-size: 100px;
+                }
                 .links{
-                    font-size: 40px;
-                    display: flex;
+                    display: none;
+                }
+                a{
+                    -webkit-tap-highlight-color: transparent;
+                }
+                .hiddenMenu{
+                    display: block;
+                }
+                
+                .btnUp{
+                    transform: scale(2.5);
+                    bottom: 75px;
+                    right: 75px;
+                }
+                .btnUp:hover{
+                    transform: scale(2.5);
                 }
 
             }
@@ -130,6 +189,16 @@
         <a onclick="go('#anchor0')" class="btnUp">
             <img src="imagens/chevron-up.svg">
         </a>
+        <a class="hiddenMenu">
+                <img src="./imagens/menu.svg" alt="">
+        </a> 
+        
+        <div class="otherLinks">
+                <a onclick="go('#conteudoSobre')">Quem somos?</a>
+                <a onclick="go('#conteudoCarrossel')">Fotos</a>
+                <a onclick="go('#conteudoLocal')">Onde estamos</a>
+                <a onclick="go('#conteudoContato')">Contato</a>
+            </div>
         <header>
             <div class="links">
                 <a onclick="go('#conteudoSobre')">Quem somos?</a>
@@ -137,6 +206,7 @@
                 <a onclick="go('#conteudoLocal')">Onde estamos</a>
                 <a onclick="go('#conteudoContato')">Contato</a>
             </div>
+               
             <h1>Nome do site</h1>
             <p>Breve descrição</p>
         </header>

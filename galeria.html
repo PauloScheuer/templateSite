@@ -1,5 +1,5 @@
 <style>
-    #conteudoCarrossel{
+    #conteudoCarrossel {
         color: #373737;
         background: #f4f4f4;
         text-align: center;
@@ -11,14 +11,16 @@
         min-height: 300px;
         overflow: auto;
     }
-    #conteudoCarrossel h1{
+
+    #conteudoCarrossel h1 {
         font-size: 45px;
     }
-    
 </style>
 <a id="fotos"></a>
 <div id="conteudoCarrossel">
-    <center><h1>Galeria</h1></center>
+    <center>
+        <h1>Galeria</h1>
+    </center>
     <?php include './carouselGenerator/carousel.php';
     
     $images = ["./carouselGenerator/images/c1.jpg","./carouselGenerator/images/c2.jpg","./carouselGenerator/images/c3.jpg"];
